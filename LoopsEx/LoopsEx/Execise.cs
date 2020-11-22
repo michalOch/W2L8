@@ -24,6 +24,22 @@ namespace LoopsEx
             }
         }
 
+        public void Recursive_Ex3()
+        {
+            int n = 20;
+            for (int i = 1; i <= n; i++)
+            {
+                Console.Write(fib(i) + ", ");
+            }
+
+        }
+
+        public int fib(int n)
+        {
+            if (n <= 2) return 1;
+            return fib(n - 2) + fib(n - 1);
+        }
+
         public void Ex2()
         {
             // Napisz program, w którym za pomocą pętli do…while znajdziesz wszystkie liczby parzyste z zakresu 0 – 1000.

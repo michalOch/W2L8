@@ -9,7 +9,8 @@ namespace LoopsEx
             Execise execise = new Execise();
             //execise.Ex1();
             //execise.Ex2();
-            execise.Ex3();
+            //execise.Ex3();            
+            execise.Recursive_Ex3();
         }
     }
 }
