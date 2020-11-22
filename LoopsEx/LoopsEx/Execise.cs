@@ -9,7 +9,33 @@ namespace LoopsEx
         public void Ex4()
         {
             // Napisz program, który po podaniu liczby całkowitej wyświetli piramidę liczb od 1 do podanej liczby w formie
+            int n = GetNumber();
+            
+            // liczba do wyświetlenia
+            int number = 1;
+            for (int i = 1; number <= n; i++)
+            {
+                for (int j = 1; j <= i; j++)
+                {
+                    if (number > n) break;
+                    Console.Write($"{number} ");
+                    number++;
+                }
+                Console.WriteLine();  
+            }
+        }
 
+        public int GetNumber()
+        {
+            int number = 0;
+            string result = string.Empty;
+            do
+            {
+                Console.Write("Podaj liczbę: ");
+                result = Console.ReadLine();
+
+            } while (!int.TryParse(result, out number) || number <= 0);
+            return number;
         }
 
         public void Ex3()
