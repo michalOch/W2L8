@@ -8,7 +8,8 @@ namespace LoopsEx
         {
             Execise execise = new Execise();
             //execise.Ex1();
-            execise.Ex2();
+            //execise.Ex2();
+            execise.Ex3();
         }
     }
 }
