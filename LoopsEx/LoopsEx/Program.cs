@@ -6,7 +6,7 @@ namespace LoopsEx
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Execise execise = new Execise();
         }
     }
 }
