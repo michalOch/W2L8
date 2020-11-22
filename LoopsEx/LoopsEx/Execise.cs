@@ -9,7 +9,7 @@ namespace LoopsEx
         public void Ex3()
         {
             // Napisz program, który zaimplementuje ciąg Fibonacciego i wyświetli go na ekranie.
-            // zakres
+            // zakres pętli
             int n = 100;
 
             // zmienne do przechowywania element n-2 i n-1 
