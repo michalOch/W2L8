@@ -9,6 +9,24 @@ namespace LoopsEx
         public void Ex2()
         {
             // Napisz program, w którym za pomocą pętli do…while znajdziesz wszystkie liczby parzyste z zakresu 0 – 1000.
+            
+            int n = 0, counter = 0;
+            do
+            {
+                if (IsEven(n)) counter++;
+                n++;
+            } while (n <= 1000);
+            
+            Console.WriteLine($"\r\nW zakresie 0 do 1000 znajduje się {counter} liczb pierwszych. ");
+        }
+
+        public bool IsEven(int number)
+        {
+            if(number == 0) return false;
+
+            if(number%2 != 0) return false;
+
+            return true;
         }
 
         public void Ex1()
