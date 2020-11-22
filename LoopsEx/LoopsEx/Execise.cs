@@ -9,6 +9,19 @@ namespace LoopsEx
         public void Ex3()
         {
             // Napisz program, który zaimplementuje ciąg Fibonacciego i wyświetli go na ekranie.
+            // zakres
+            int n = 100;
+
+            // zmienne do przechowywania element n-2 i n-1 
+            long a = 0;
+            long b = 1;
+
+            for (int i = 0; i <= n; i++)
+            {
+                Console.Write(b + ",");
+                b = b + a;  // pod zmienną b przypisujemy następny wyraz ciągu
+                a = b - a;  // pod zmienną a przypisujemy warość zmiennej b
+            }
         }
 
         public void Ex2()
