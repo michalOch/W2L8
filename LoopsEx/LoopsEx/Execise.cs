@@ -6,6 +6,11 @@ namespace LoopsEx
 {
     public class Execise
     {
+        public void Ex2()
+        {
+            // Napisz program, w którym za pomocą pętli do…while znajdziesz wszystkie liczby parzyste z zakresu 0 – 1000.
+        }
+
         public void Ex1()
         {
             // Napisz program, który sprawdzi ile jest liczb pierwszych w zakresie 0 – 100.
