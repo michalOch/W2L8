@@ -6,6 +6,12 @@ namespace LoopsEx
 {
     public class Execise
     {
+        public void Ex4()
+        {
+            // Napisz program, który po podaniu liczby całkowitej wyświetli piramidę liczb od 1 do podanej liczby w formie
+
+        }
+
         public void Ex3()
         {
             // Napisz program, który zaimplementuje ciąg Fibonacciego i wyświetli go na ekranie.
