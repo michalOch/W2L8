@@ -6,6 +6,11 @@ namespace LoopsEx
 {
     public class Execise
     {
+        public void Ex5()
+        {
+            // Napisz program, który dla liczb od 1 do 20 wyświetli na ekranie ich 3 potęgę.
+        }
+
         public void Ex4()
         {
             // Napisz program, który po podaniu liczby całkowitej wyświetli piramidę liczb od 1 do podanej liczby w formie
