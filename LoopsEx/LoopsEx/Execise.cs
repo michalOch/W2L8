@@ -8,7 +8,16 @@ namespace LoopsEx
     {
         public void Ex6()
         {
+            // Suma odwrotnośći
+            double sum = 0.0;  
+            
             // Napisz program, który dla liczb od 0 do 20 obliczy sumę wg wzoru: 1 + ½ + 1/3 + ¼ itd.
+            for (int i = 1; i <= 20 ; i++)
+            {
+                sum += 1.0 / i;
+            }
+
+            Console.WriteLine($"Suma odwrotnośći wynosi: {sum}");
         }
         public void Ex5()
         {
