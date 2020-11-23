@@ -6,6 +6,10 @@ namespace LoopsEx
 {
     public class Execise
     {
+        public void Ex6()
+        {
+            // Napisz program, który dla liczb od 0 do 20 obliczy sumę wg wzoru: 1 + ½ + 1/3 + ¼ itd.
+        }
         public void Ex5()
         {
             // Napisz program, który dla liczb od 1 do 20 wyświetli na ekranie ich 3 potęgę.
