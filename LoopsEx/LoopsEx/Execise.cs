@@ -6,6 +6,11 @@ namespace LoopsEx
 {
     public class Execise
     {
+        public void Ex7()
+        {
+            // Napisz program, który dla liczby zadanej przez użytkownika narysuje diament o krótszej przekątnej o długości wprowadzonej przez użytkownika i wg wzoru:
+
+        }
         public void Ex6()
         {
             // Suma odwrotnośći
