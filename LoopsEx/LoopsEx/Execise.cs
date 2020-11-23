@@ -9,8 +9,43 @@ namespace LoopsEx
         public void Ex7()
         {
             // Napisz program, który dla liczby zadanej przez użytkownika narysuje diament o krótszej przekątnej o długości wprowadzonej przez użytkownika i wg wzoru:
+            int len = 5;
+            int diagonal = len / 2;
 
+            for (int i = len; i >0 ; i--)
+            {
+                for (int j = i; j > 0 ; j--)
+                {
+                    Console.Write(" ");
+                }
+                int cond = 2 * (len - i) + 1;
+                for (int k = cond; k > 0; k--)
+                {
+                    Console.Write("*");
+                }
+                Console.WriteLine();
+
+            }
+
+            for (int i = 0; i <= len; i++)
+            {
+                for (int j = 1; j <= i; j++)
+                {
+                    Console.Write(" ");
+                }
+
+                int cond = 2 * (len - i) + 1;
+
+                for (int k = cond; k > 0 ; k--)
+                {
+                    Console.Write("*");
+                }
+                Console.WriteLine();
+            }
+
+            Console.ReadLine();
         }
+
         public void Ex6()
         {
             // Suma odwrotnośći
