@@ -6,6 +6,54 @@ namespace LoopsEx
 {
     public class Execise
     {
+        public void Ex10()
+        {
+            // Pobiernaie danych
+            int a = GetNum();
+            int b = GetNum();
+
+            int nwd = NWD(a, b);
+            int nww = NWW(a, b, nwd);
+
+            Console.WriteLine($"Największy wspólny dzielnik (NWD) liczb {a} i {b} wynosi: {nwd}");
+            Console.WriteLine($"Najmniejsza wspólna wielokrotność (NWW) liczb {a} i {b} wynosi: {nww}");
+        }
+
+        private static int GetNum()
+        {
+            // liczba musi być całkowita i  dodatania;
+            int temp = 0;
+            string input = string.Empty;
+
+            do
+            {
+                Console.Write("Podaj liczbę:");
+                input = Console.ReadLine();
+                int.TryParse(input, out temp);
+            } while (temp <= 0);
+
+            return temp;
+        }
+
+        private int NWW(int a, int b, int nwd)
+        {
+            return (a * b) / nwd;
+        }
+
+        private int NWD(int a, int b)
+        {
+            int temp;
+
+            while (b != 0)
+            {
+                temp = b;
+                b = a % b;
+                a = temp;
+            }
+
+            return a;
+        }
+
         public void Ex9()
         {
             // Napisz program, który zamieni liczbę dziesiętną na liczbę binarną
