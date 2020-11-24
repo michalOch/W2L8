@@ -14,7 +14,8 @@ namespace LoopsEx
             //execise.Ex4();
             //execise.Ex5();
             //execise.Ex6();
-            execise.Ex7();
+            //execise.Ex7();
+            execise.Ex8();
         }
     }
 }

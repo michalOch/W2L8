@@ -6,7 +6,21 @@ namespace LoopsEx
 {
     public class Execise
     {
-        
+        public void Ex8()
+        {
+            // Napisz program, który odwróci wprowadzony przez użytkownika ciąg znaków
+            Console.Write("Podaj wyraz: ");
+            string statement = Console.ReadLine();
+            string reverseStatement = string.Empty;
+
+            for (int i = statement.Length-1; i >= 0; i--)
+            {
+                reverseStatement += statement[i];
+            }
+
+            Console.WriteLine("Odwrócony wyraz: " + reverseStatement);
+        }
+
         public void Ex7()
         {
             // Napisz program, który dla liczby zadanej przez użytkownika narysuje diament o krótszej przekątnej o długości wprowadzonej przez użytkownika i wg wzoru:
