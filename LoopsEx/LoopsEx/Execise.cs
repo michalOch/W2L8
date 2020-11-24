@@ -6,19 +6,29 @@ namespace LoopsEx
 {
     public class Execise
     {
+        
         public void Ex7()
         {
             // Napisz program, który dla liczby zadanej przez użytkownika narysuje diament o krótszej przekątnej o długości wprowadzonej przez użytkownika i wg wzoru:
-            int len = 5;
+            int len = 0;
+            string value = string.Empty;
+            do
+            {
+                Console.Write("Podaj długość przekątnej figury (liczba całkowita, nieparzysta): ");
+                value = Console.ReadLine();
+                int.TryParse(value, out len);
+            } while (len <= 1 || len % 2 == 0 );
+
+            // Przekątna diamentu 
             int diagonal = len / 2;
 
-            for (int i = len; i >0 ; i--)
+            for (int i = diagonal; i >0 ; i--)
             {
                 for (int j = i; j > 0 ; j--)
                 {
                     Console.Write(" ");
                 }
-                int cond = 2 * (len - i) + 1;
+                int cond = 2 * (diagonal - i) + 1;
                 for (int k = cond; k > 0; k--)
                 {
                     Console.Write("*");
@@ -27,14 +37,14 @@ namespace LoopsEx
 
             }
 
-            for (int i = 0; i <= len; i++)
+            for (int i = 0; i <= diagonal; i++)
             {
                 for (int j = 1; j <= i; j++)
                 {
                     Console.Write(" ");
                 }
 
-                int cond = 2 * (len - i) + 1;
+                int cond = 2 * (diagonal - i) + 1;
 
                 for (int k = cond; k > 0 ; k--)
                 {
@@ -46,6 +56,7 @@ namespace LoopsEx
             Console.ReadLine();
         }
 
+       
         public void Ex6()
         {
             // Suma odwrotnośći
