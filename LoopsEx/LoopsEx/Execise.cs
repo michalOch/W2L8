@@ -10,8 +10,30 @@ namespace LoopsEx
         {
             // Napisz program, który zamieni liczbę dziesiętną na liczbę binarną
             // wartość testowa
-            int number = 46;
+            int decimalNumber = 57;
+            int number = decimalNumber;
+            string binNum = string.Empty;
 
+            do
+            {               
+                if (number % 2 == 0) binNum += 0;
+                else binNum += 1;
+                number /= 2;
+
+            } while (number >  0) ;
+
+            Console.WriteLine($"Liczba {decimalNumber} w systemie dziesiętnym to {Reverse(binNum)} w systemie binarnym");
+        }
+
+        public string Reverse(string value)
+        {
+            string result = string.Empty;
+
+            for (int i = value.Length-1 ; i >= 0; i--)
+            {
+                result += value[i];
+            }
+            return result;
         }
 
         public void Ex8()
