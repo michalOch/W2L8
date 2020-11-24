@@ -6,6 +6,14 @@ namespace LoopsEx
 {
     public class Execise
     {
+        public void Ex9()
+        {
+            // Napisz program, który zamieni liczbę dziesiętną na liczbę binarną
+            // wartość testowa
+            int number = 46;
+
+        }
+
         public void Ex8()
         {
             // Napisz program, który odwróci wprowadzony przez użytkownika ciąg znaków
